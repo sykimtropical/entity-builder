@@ -18,11 +18,11 @@ import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 /**
- * Builder 패턴의 필수값 이용
+ * Builder 를 이용하지만 필수 값에 대한 제한은 없는 Entity
  * */
 @Entity(name = "test_user_builder")
 @EntityListeners(AuditingEntityListener.class)
-@Builder @AllArgsConstructor(access = AccessLevel.PROTECTED)
+@Builder @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class OnlyBuilderUser {
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)

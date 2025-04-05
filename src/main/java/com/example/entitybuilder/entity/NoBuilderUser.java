@@ -17,7 +17,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * Builder 패턴의 필수값 이용
+ * Getter/Setter 를 사용하는 Entity
  * */
 @Entity(name = "test_user_no_builder")
 @EntityListeners(AuditingEntityListener.class)

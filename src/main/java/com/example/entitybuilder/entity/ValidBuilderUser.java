@@ -24,7 +24,7 @@ import lombok.NoArgsConstructor;
 @Entity(name = "test_user_valid")
 @EntityListeners(AuditingEntityListener.class)
 @Builder
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 public class ValidBuilderUser {
